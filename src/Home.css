@@ -1,0 +1,131 @@
+/* Home.css */
+
+/* Container styles */
+
+body {
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Increase the height to 600px */
+}
+
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    animation: moveText 2s ease infinite alternate;
+    /* Apply animation */
+}
+
+@keyframes moveText {
+    from {
+        transform: translateY(0);
+        /* Initial position */
+    }
+
+    to {
+        transform: translateY(30px);
+        /* Final position */
+    }
+}
+
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Textarea styles */
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    /* Allow vertical resizing */
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Button hover styles */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result styles */
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Radio button container styles */
+.radio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Individual radio button styles */
+.radio-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Radio button input styles */
+.radio-item input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Label styles */
+.radio-item label {
+    font-size: 16px;
+    color: white;
+    /* Dark text color */
+}
+
+/* Style for the container */
+.dropdown-container {}
+
+/* Style for the select element */
+.dropdown-select {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+/* Style for the options */
+.dropdown-option {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style for the selected option */
+.dropdown-option[selected] {
+    background-color: #007bff;
+    color: #fff;
+}
